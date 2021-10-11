@@ -3,8 +3,9 @@
 
 // Static data member initialization
 const std::string PlayingCard::CARD_SUIT[] = { "Spades", "Hearts", "Diamonds", "Clubs" };
-const std::string PlayingCard::CARD_RANK[] = { "Not Used", "Ace", "Two", "Three", "Four", "Five",
-								"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King" };
+const std::string PlayingCard::CARD_RANK[] = {"Not Used", "Ace", "Two", "Three", "Four", "Five",
+	"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"
+};
 const int PlayingCard::RANKS = 13;
 const int PlayingCard::SUITS = 4;
 
@@ -140,7 +141,7 @@ void PlayingCard::SetRank(const std::string& rank, const bool update_value)
  *  @param	suit_index: int
  *	@throws	invalid_argument exception if the param is invalid
  */
-void PlayingCard::SetSuit(const int suit_index)
+void PlayingCard:: SetSuit(const int suit_index)
 {
 	// if the suit parameter is valid
 	if (suit_index >= 0 && suit_index < SUITS)

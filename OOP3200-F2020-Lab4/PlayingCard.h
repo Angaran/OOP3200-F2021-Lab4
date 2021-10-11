@@ -19,6 +19,8 @@
 
 class PlayingCard
 {
+public: 
+
 	/************************************************************************************
 		 *	Static arrays of strings to represent the ranks and suits
 		 ************************************************************************************/
@@ -33,6 +35,7 @@ class PlayingCard
 	// Parametrized constructors
 	PlayingCard(const std::string& rank, const std::string& suit, int value = DEFAULT_VALUE_WANTED, bool face_up = true);
 	PlayingCard(int rank_index, int suit_index, int value = DEFAULT_VALUE_WANTED, bool face_up = true);
+	
 
 	// Accessors		
 	std::string GetRank() const { return CARD_RANK[myRankIndex]; } // gets rank name as a string

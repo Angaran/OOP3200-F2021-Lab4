@@ -1,4 +1,4 @@
-#include <ctime>
+                                                                                                                                                                                                                                                                                      #include <ctime>
 #include <iostream>
 #include "StandardDeck.h"
 
@@ -11,7 +11,7 @@ int main()
 {
 	/*	Your main() function should demonstrate each of the features of the StandardDeck class*/
 	srand(time(nullptr)); // seed the random number generator
-
+	StandardDeck();
 	// create a deck
 	
 	// Show the deck object as initialized
