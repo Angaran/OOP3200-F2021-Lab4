@@ -24,8 +24,8 @@ public:
 	/************************************************************************************
 		 *	Static arrays of strings to represent the ranks and suits
 		 ************************************************************************************/
-	static const std::string CARD_RANK[]; // an array that holds the names of the ranks								
-	static const std::string CARD_SUIT[]; // an array that holds the names of the suits
+	static  std::string CARD_RANK[]; // an array that holds the names of the ranks								
+	static  std::string CARD_SUIT[]; // an array that holds the names of the suits
 	static const int RANKS; // the number of ranks
 	static const int SUITS; // the number of suits
 
@@ -51,7 +51,8 @@ public:
 	void SetSuit(const std::string& suit); // sets the suit
 	void SetValue(int value = DEFAULT_VALUE_WANTED); // sets the value
 	bool FlipCard() { return (IsFaceUp = !IsFaceUp); } // changes the face up state
-													 // defined in-line
+	
+	// defined in-line
 	//	Public member variables
 	bool IsFaceUp; // true if face-up, false if face-down
 

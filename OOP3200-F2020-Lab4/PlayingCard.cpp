@@ -2,8 +2,8 @@
 #include <stdexcept>	// for invalid_argument
 
 // Static data member initialization
-const std::string PlayingCard::CARD_SUIT[] = { "Spades", "Hearts", "Diamonds", "Clubs" };
-const std::string PlayingCard::CARD_RANK[] = {"Not Used", "Ace", "Two", "Three", "Four", "Five",
+ std::string PlayingCard::CARD_SUIT[] = { "Spades", "Hearts", "Diamonds", "Clubs" };
+ std::string PlayingCard::CARD_RANK[] = {"Not Used", "Ace", "Two", "Three", "Four", "Five",
 	"Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"
 };
 const int PlayingCard::RANKS = 13;

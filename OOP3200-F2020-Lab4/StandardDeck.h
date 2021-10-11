@@ -25,25 +25,44 @@ class StandardDeck
 public:
 	// Initialization:
 	// Default Constructor
-	StandardDeck();
-	// declaring the initializing method. as a void
-	void Initialize();
-	// Rule of three:
+	//StandardDeck();
+	//// declaring the initializing method. as a void
+	//void Initialize();
+	//// Rule of three:
 
-	// Accessors:
-	std::vector<PlayingCard*> GetDeckOfCards() const;
-	int GetSizeArray();
-	// Mutators:
-	//SetDeckOfCards(std::string deck_of_cards)
-	//{
-	//	m_deck_of_Cards = deck_of_cards;
-	//}
-	void SetSizeOfArray();
+	//// Accessors:
+	//std::vector<PlayingCard*> GetDeckOfCards() const;
+	//int GetSizeArray();
+	//// Mutators:
+	////SetDeckOfCards(std::string deck_of_cards)
+	////{
+	////	m_deck_of_Cards = deck_of_cards;
+	////}
 
-private:
-	std::vector <PlayingCard*>m_deck_of_Cards;
-	int SizeArray;
-};
+
+
+		void Initialize();
+
+		/*int DrawNextCard();*/
+		// Initialization:
+		StandardDeck();
+		// Rule of three:
+		/*~StandardDeck();*/
+		/*void SetSize(const StandardDeck& size);
+		StandardDeck(const StandardDeck& other_deck);
+		StandardDeck& operator =(const StandardDeck& other_deck);*/
+		// Accessors:
+		StandardDeck GetSize();
+		// Mutators:
+		/*void SetSize(int size);*/
+
+	private:
+		std::vector<PlayingCard>m_deckOfCards;
+		int m_size = 52;
+	};
+
 
 #endif /* defined (__STANDARD_DECK__) */
+
+
 
