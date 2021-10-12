@@ -24,7 +24,7 @@ int main()
 	obj.PrintDeckOfCard();
 	//Calling Pause Function
 	Pause();
-	
+	std::cout << "The card which is first and will be removed is: ";
 	// Draw the next card and show it
 	obj.DrawNextCard();
 	// Draw a random card and show it
