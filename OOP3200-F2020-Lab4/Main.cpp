@@ -21,12 +21,12 @@ int main()
 		// create a deck
 	StandardDeck();
 	// Show the deck object as initialized
-	obj.PrintDeckOfCard();
+	
 	//Calling Pause Function
 	Pause();
 
 	// Draw the next card and show it
-	std::cout << "The first element will be removed which is " << obj.DrawNextCard();
+	 obj.DrawNextCard();
 	// Draw a random card and show it
 
 	// Show the deck with the remaining cards

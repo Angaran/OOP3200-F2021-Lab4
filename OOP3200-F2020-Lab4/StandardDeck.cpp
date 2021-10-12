@@ -53,7 +53,16 @@ void StandardDeck::Initialize()
 		}
 	}
 
+	int i = 0;
+	//While loop to print all the elements of DeckOfCards.
+	while (i <DeckOfCard.size())
+	{
+		PlayingCard deckOfCards;
+		deckOfCards = DeckOfCard.at(i);
+		std::cout << deckOfCards.GetSuit() << " of " << deckOfCards.GetRank() << "\n";
 
+		i++;
+	}
 
 	//std::string* aptr = &PlayingCard().GetRank();
 }
@@ -86,17 +95,8 @@ std::vector<PlayingCard> StandardDeck::GetDeckOfCards()
 	return DeckOfCard;
 }
 //PrintDeckOfCard method defintion
-void StandardDeck::PrintDeckOfCard()
-{	
-	int i = 0;
-	//While loop to print all the elements of DeckOfCards.
-	while (i < DeckOfCard.size())
-	{
-		PlayingCard deckOfCards;
-		deckOfCards = DeckOfCard.at(i);
-		std::cout << deckOfCards.GetSuit() << " of " << deckOfCards.GetRank() << "\n";
-
-		i++;
-	}
-
-}
+//void StandardDeck::PrintDeckOfCard()
+//{	
+//
+//
+//}
