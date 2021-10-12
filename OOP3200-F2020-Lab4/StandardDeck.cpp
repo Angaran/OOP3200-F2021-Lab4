@@ -39,8 +39,7 @@ void StandardDeck::Initialize()
 		//allocate the pointer a size of 52
 		ptr = (PlayingCard*)malloc(sizeof(52));
 	}
-
-	std::vector<PlayingCard>DeckOfCard;
+	
 	/*DeckOfCard = new std::vector<PlayingCard>();*/
 	// for loop to push the rank of the card and suits of the card to the vector.
 	for (int suit = 0; suit < 4; suit++)
@@ -53,16 +52,7 @@ void StandardDeck::Initialize()
 		}
 	}
 
-	int i = 0;
-	//While loop to print all the elements of DeckOfCards.
-	while (i <DeckOfCard.size())
-	{
-		PlayingCard deckOfCards;
-		deckOfCards = DeckOfCard.at(i);
-		std::cout << deckOfCards.GetSuit() << " of " << deckOfCards.GetRank() << "\n";
 
-		i++;
-	}
 
 	//std::string* aptr = &PlayingCard().GetRank();
 }
@@ -95,8 +85,17 @@ std::vector<PlayingCard> StandardDeck::GetDeckOfCards()
 	return DeckOfCard;
 }
 //PrintDeckOfCard method defintion
-//void StandardDeck::PrintDeckOfCard()
-//{	
-//
-//
-//}
+void StandardDeck::PrintDeckOfCard()
+{	
+	int i = 0;
+	//While loop to print all the elements of DeckOfCards.
+	while (i < DeckOfCard.size())
+	{
+		PlayingCard deckOfCards;
+		deckOfCards = DeckOfCard.at(i);
+		std::cout << deckOfCards.GetSuit() << " of " << deckOfCards.GetRank() << "\n";
+
+		i++;
+	}
+
+}

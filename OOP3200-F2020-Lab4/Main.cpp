@@ -21,16 +21,17 @@ int main()
 		// create a deck
 	StandardDeck();
 	// Show the deck object as initialized
-	
+	obj.PrintDeckOfCard();
 	//Calling Pause Function
 	Pause();
-
+	
 	// Draw the next card and show it
-	 obj.DrawNextCard();
+	obj.DrawNextCard();
 	// Draw a random card and show it
 
 	// Show the deck with the remaining cards
-	std::cout << "The remaining cards are " << obj.CardsRemaining();
+	 std::cout << "\nThe remaining cards are " << obj.CardsRemaining();
+	/*std::cout << "The remaining cards are " << obj.CardsRemaining();*/
 }
 
 
