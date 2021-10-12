@@ -1,3 +1,10 @@
+//Student 1 Name: Devanshu Dave
+//Student 1 ID: 100785733
+//Student 2 Name: Angaran Yogeswaran
+//Student 2 ID: 100754161
+//Date: October 9 2021
+//Filename: OOP3200-F2020-Lab4
+
 /** OOP3200. F2020. StandardDeck.h
  *
  *  In this lab you will create your own collection class called StandardDeck, which
@@ -15,50 +22,42 @@
 #pragma once
 #ifndef __STANDARD_DECK__
 #define __STANDARD_DECK__
-
+//Include Vector 
 #include <vector>
-
+//Include PlayingCard.h file
 #include "PlayingCard.h"
 
 class StandardDeck
 {
 public:
-	// Initialization:
-	// Default Constructor
-	//StandardDeck();
-	//// declaring the initializing method. as a void
-	//void Initialize();
-	//// Rule of three:
+	
+	// Declared the Initialize method
+	void Initialize();
 
-	//// Accessors:
-	//std::vector<PlayingCard*> GetDeckOfCards() const;
-	//int GetSizeArray();
-	//// Mutators:
-	////SetDeckOfCards(std::string deck_of_cards)
-	////{
-	////	m_deck_of_Cards = deck_of_cards;
-	////}
+	// default constructor
+	StandardDeck();
+	//destructor
+	~StandardDeck();
+	// Rule of three:
+	/*~StandardDeck();*/
+	// declared the DrawNextCard method.
+	void DrawNextCard();
+	// declared the CardsRemaining method.
+	int CardsRemaining();
 
+	// Accessors:
+	std::vector<PlayingCard> GetDeckOfCards();
+	//Accessor for GetSize
+	StandardDeck GetSize();
+	// declared the printDeckOfCard method
+	void PrintDeckOfCard();
+	
 
-
-		void Initialize();
-
-		/*int DrawNextCard();*/
-		// Initialization:
-		StandardDeck();
-		// Rule of three:
-		/*~StandardDeck();*/
-		/*void SetSize(const StandardDeck& size);
-		StandardDeck(const StandardDeck& other_deck);
-		StandardDeck& operator =(const StandardDeck& other_deck);*/
-		// Accessors:
-		StandardDeck GetSize();
-		// Mutators:
-		/*void SetSize(int size);*/
-
-	private:
-		std::vector<PlayingCard>m_deckOfCards;
-		int m_size = 52;
+private:
+	//Declaring Vector of PlayCard DeckOfCard
+	std::vector<PlayingCard>DeckOfCard;
+	//Private Varuable m_size set to size of 52
+	int m_size = 52;
 	};
 
 

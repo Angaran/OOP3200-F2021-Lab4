@@ -1,3 +1,10 @@
+//Student 1 Name: Devanshu Dave
+//Student 1 ID: 100785733
+//Student 2 Name: Angaran Yogeswaran
+//Student 2 ID: 100754161
+//Date: October 9 2021
+//Filename: OOP3200-F2020-Lab4
+
 #include "PlayingCard.h"
 #include <stdexcept>	// for invalid_argument
 
